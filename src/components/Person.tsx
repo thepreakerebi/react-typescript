@@ -1,9 +1,4 @@
-type personProps = {
-    name: {
-        fName: string,
-        lName: string
-    }
-}
+import { personProps } from "./Person.types";
 
 
 
