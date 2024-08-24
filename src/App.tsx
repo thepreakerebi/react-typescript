@@ -1,10 +1,8 @@
 
 import './App.css';
-import Greet from './components/Greet';
-import Heading from './components/Heading';
-import Oscar from './components/Oscar';
+import Button from './components/Button';
+import Input from './components/Input';
 
-import Status from './components/Status';
 
 function App() {
 
@@ -12,12 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <Status status='success' />
-      <Heading>Placeholder text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to James Auther</Heading>
-      </Oscar>
-      <Greet name='John' isLoggedIn={true} />
+      <Input value='' handleChange={(event) => console.log(event)} />
+      <Button handleClick={(event, id) => {
+        console.log('Button clicked', event, id);
+      }} />
+
     </div>
   );
 }
