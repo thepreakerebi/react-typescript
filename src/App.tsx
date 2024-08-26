@@ -1,5 +1,5 @@
-import LoggedIn from "./components/state/LoggedIn";
-import User from "./components/state/User";
+import Counter from "./components/state/Counter";
+
 
 
 
@@ -10,8 +10,7 @@ function App() {
 
   return (
     <div className="App">
-        <LoggedIn />
-        <User />
+        <Counter />
     </div>
   );
 }
